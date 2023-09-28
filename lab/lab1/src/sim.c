@@ -129,9 +129,9 @@ void process_instruction()
                     // SYSCALL系统调用，这里是按照实验手册的限制性定义进行编写
                     if (CURRENT_STATE.REGS[2] == 0x0a) {//v0寄存器就是reg[2]
                         RUN_BIT = FALSE;
-                    } else {
-                        NEXT_STATE.PC = CURRENT_STATE.PC + 4;
-                    }
+                    } 
+                    NEXT_STATE.PC = CURRENT_STATE.PC + 4;
+                    
                     break;
                 }
                 case 0x10: {
