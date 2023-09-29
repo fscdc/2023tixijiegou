@@ -9,5 +9,5 @@ test1:
 		sll    $t2, $t1, 3            # $t2 = $t1 << 3
 		sub    $t3, $zero, $t2        # $t3 = -$t2
 		xor    $t4, $t3, $t0          # $t4 = $t3 ^ $t0
-		addiu  $v0, $zero, 0x4        # $v0 = 4
+		addiu  $v0, $zero, 0xa        # $v0 = 10
 		syscall

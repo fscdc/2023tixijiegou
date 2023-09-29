@@ -11,5 +11,5 @@ test2:
         sra     $t8, $t7, 1           # $t8 = $t7 >> 1 (arithmetic shift)
         and     $t9, $t8, $t6         # $t9 = $t8 & $t6
         lui     $s0, 50               # $s0 = 50 << 16
-        addiu   $v0, $zero, 0x5       # $v0 = 5
+        addiu   $v0, $zero, 0xa       # $v0 = 10
         syscall
